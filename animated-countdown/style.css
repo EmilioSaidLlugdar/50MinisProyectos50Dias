@@ -21,7 +21,9 @@ h4{
     margin: 5px;
     text-transform: uppercase;
 }
-
+/*El Selector de clase se conforma en Css anteponiendo un punto '. ' al valor que tenga el atributo 
+'class' del elemento en el html. Así, el selector . miclase apuntará a todos los elementos del documento 
+al que afecte la hoja de estilos que tengan declarado class="miclase" */
 .counter{
     position: fixed;
     top: 50%;
@@ -35,6 +37,8 @@ h4{
     animation: hide 0.2s ease-out;
 }
 
+/*@import — Indica al motor de CSS que incluya una hoja de estilos externa. 
+@namespace — Indica al motor de CSS que todo el contenido usa como prefijo un espacio de nombres XML.*/
 @keyframes hide{
     0%{
         transform: translate(-50%,-50%) scale(1);
