@@ -3,15 +3,15 @@
 // de los nodos del documento) que coincida con el grupo especificado 
 //de selectores.
 
-const buttons = document.querySelectorAll('.riple')
+const buttons = document.querySelectorAll('.ripple')
 
 buttons.forEach(button => {
     button.addEventListener('click', function(e){
         const x = e.pageX
         const y = e.pageY
 
-        const buttonTop = e.target.offserTop
-        const buttonLeft = e.target.offserLeft
+        const buttonTop = e.target.offsetTop
+        const buttonLeft = e.target.offseLeft
 
         const xInside = x - buttonLeft
         const yInside = y - buttonTop
